@@ -1,0 +1,128 @@
+
+.root {
+    -fx-background-color: #303136;
+}
+
+
+.header-text {
+    -fx-fill: #4b4b4b;
+    -fx-font-size: 50px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Calibri";
+}
+
+
+.text {
+    -fx-fill: #5866ef;
+	-fx-font-weight: bold;
+}
+
+/* TextField for webhook input */
+.api-input {
+    -fx-background-color: #323339;
+    -fx-border-color: #44454c;
+    -fx-text-fill: #8b8b8f;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+
+.api-input:hover {
+    -fx-background-color: #393a40;
+}
+
+/* Result text styling (will be set dynamically for good/bad) */
+.result-text {
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-font-weight: bold;
+}
+
+/* Action button */
+.action-button {
+    -fx-background-color: transparent;
+    -fx-border-color: #44454c;
+    -fx-text-fill: #5866ef;
+    -fx-border-radius: 27;
+    -fx-background-radius: 27;
+	-fx-font-size: 16px;
+}
+
+.action-button:hover {
+    -fx-background-color: #393a40;
+	-fx-border-color: #5866ef;
+	-fx-cursor: hand;
+}
+
+/* Checkbox */
+.custom-checkbox .box {
+    -fx-background-color: #323339;
+    -fx-border-color: #44454c;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.custom-checkbox .box:hover {
+    -fx-border-color: #5866ef;
+	-fx-background-color: #393a40;
+	-fx-cursor: hand;
+}
+
+.custom-checkbox:selected .mark {
+    -fx-background-color: #5866ef;
+}
+
+.success-box {
+    -fx-background-color: #b8d8be;
+    -fx-border-color: #6aa772;
+    -fx-text-fill: #1f2e1d;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-font-weight: bold;
+}
+
+.error-box {
+    -fx-background-color: #fdaaaa;
+    -fx-border-color: #c04848;
+    -fx-text-fill: #3d1f1f;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-font-weight: bold;
+}
+
+.img-link-github:hover {
+    -fx-cursor: hand;
+	-fx-effect: dropshadow(gaussian, #5866ef, 1.5, .6 , 0, 0);
+}
+
+.img-link-linkedin:hover {
+    -fx-cursor: hand;
+	-fx-effect: dropshadow(gaussian, #0a66c2, 1.5, .6 , 0, 0);
+}
+
+/*
+bg color -  #303136
+header color - #5866ef
+api text box bg color - #323339
+api text box border color - #44454c
+api text box text color - #8b8b8f
+api text box bg hover color - #393a40
+response good text box bg color - 
+response good text box border color - 
+response good text box text color - 
+response bad text box bg color - 
+response bad text box border color - 
+response bad text box text color - 
+button bg color - transparent
+button border color - #5866ef
+button text color - #5866ef
+button hover bg color - #5866ef 
+button hover border color - #5866ef
+button hover text color - #23272a
+button radius - 
+checkbox bg color - transparent
+checkbox border color - #44454c
+checkbox check color - #5866ef
+checkbox hover border color - #393a40
+checkbox raduis - 
+
+*/

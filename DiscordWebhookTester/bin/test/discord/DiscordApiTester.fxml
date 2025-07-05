@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="241.0" prefWidth="559.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="test.discord.DiscordApiTesterController">
+   <children>
+      <Text layoutX="24.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="header-text" text="Discord Webhook Tester" />
+      <VBox alignment="CENTER" layoutX="34.0" layoutY="91.0" prefHeight="122.0" prefWidth="490.0" spacing="10.0">
+         <children>
+            <TextField fx:id="webhookUrl" prefHeight="26.0" prefWidth="415.0" promptText="https://discord.com/api/webhooks/your_webhook_url_here" styleClass="api-input">
+               <font>
+                  <Font name="Calibri Bold" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="resultText" editable="false" prefHeight="26.0" prefWidth="415.0" promptText="Result" styleClass="api-input">
+               <font>
+                  <Font name="Calibri Bold" size="12.0" />
+               </font>
+            </TextField>
+            <Button fx:id="sendBtn" mnemonicParsing="false" onAction="#sendMsg" prefHeight="40.0" prefWidth="108.0" styleClass="action-button" text="Start" />
+         </children>
+      </VBox>
+      <HBox layoutX="4.0" layoutY="214.0" prefHeight="26.0" prefWidth="551.0" spacing="240.0">
+         <children>
+            <HBox prefHeight="24.0" prefWidth="172.0" spacing="15.0">
+               <children>
+                  <ImageView fitHeight="24.0" fitWidth="80.0" onMouseClicked="#openLinkedin" pickOnBounds="true" preserveRatio="true" styleClass="img-link-linkedin">
+                     <image>
+                        <Image url="https://i.imgur.com/dGlLb4U.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="24.0" fitWidth="80.0" onMouseClicked="#openGit" pickOnBounds="true" preserveRatio="true" styleClass="img-link-github">
+                     <image>
+                        <Image url="https://i.imgur.com/QhMQktT.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <CheckBox fx:id="withMsgChkBx" mnemonicParsing="false" prefHeight="18.0" prefWidth="137.0" styleClass="custom-checkbox" text="Embeded Message" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
